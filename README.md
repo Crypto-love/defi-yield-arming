@@ -1,142 +1,111 @@
-Contribution: 2020-01-27 00:00
+# DeFi Yield Farming
 
-Contribution: 2020-01-27 00:01
+This project focuses on developing a DeFi app which implements the concept of yield farming / liquidity mining based Dai token.
 
-Contribution: 2020-01-27 00:02
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/22610163/104134982-2b389a00-539e-11eb-9ac7-642dbe48ec4d.gif">
+</p>
 
-Contribution: 2020-01-27 00:03
+Demo of the DApp with the screenshots can be found on [this wiki page](https://github.com/ahmetozlu/defi_yield_farming/wiki/Demo-of-the-DApp).
 
-Contribution: 2020-01-28 00:00
+---
+This repository presents practices about:
+- Setup a blockchain.
+- Develop Ethereum smart contracts.
+- Write tests for the developed Ethereum smart contracts. 
+- Develop a client-side website so people can actually use this application.
+---
 
-Contribution: 2020-01-28 00:01
+You can check the quick tutorial about "what is the blockchain?" in [here](https://ahmetozlu93.medium.com/blockchain-in-a-nutshell-8ad72743971e).
 
-Contribution: 2020-01-28 00:02
+---
+ToDos:
+- Add OpenZeppelin Contracts to minimize risks.
+- Develop a new feature to keep track of the rewards.
+- Implement a method to withdraw the rewards automatically when certain conditions are met (it is triggered manually in the current version).
+---
 
-Contribution: 2020-01-28 00:03
+## Theory
 
-Contribution: 2020-01-28 00:04
+### What is yield farming?
 
-Contribution: 2020-01-28 00:05
+At its core, yield farming is a process that allows cryptocurrency holders to lock up their holdings, which in turn provides them with rewards.
 
-Contribution: 2020-01-28 00:06
+**In brief:**
 
-Contribution: 2020-01-28 00:07
+- Yield farming lets you lock up funds, providing rewards in the process.
+- It involves lending out cryptos via DeFi protocols in order to earn fixed or variable interest.
+- The rewards can be far greater than traditional investments, but higher rewards bring higher risks, especially in such a volatile market.
 
-Contribution: 2020-01-28 00:08
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/22610163/118402446-91963780-b672-11eb-9574-12e19fb789f9.png" | width=720>
+</p>
 
-Contribution: 2020-01-28 00:09
+## Application Software Architecture
 
-Contribution: 2020-01-28 00:10
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/22610163/104122166-729a3880-5354-11eb-9088-5123e47990d2.png" | width=720>
+</p>
 
-Contribution: 2020-01-28 00:11
+Here is the application software architecture work-flow:
+- Users use an Internet browser to connect front-end application which is written in HTML, CSS and JavaScript. 
+- Then, instead of accessing a back-end server, the website talks directly to the blockchain which is where all the codes and data for the application lives. 
+- The DeFi application codes are contained in smart contracts written in solidity progrramming language which was a lot like JavaScript. These smart contracts are immutable which means the code can not change and all the data is stored in the public ledger which is also immutable. And, anytime new data is added to the blockchain, it will be permanent and publicly verifiable.
 
-Contribution: 2020-01-28 00:12
+## Installation
 
-Contribution: 2020-01-28 00:13
+### Setup
 
-Contribution: 2020-01-28 00:14
+- **Node.js**
 
-Contribution: 2020-01-30 00:00
+      sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+      nvm install 12.18.3
+      node -v
 
-Contribution: 2020-01-30 00:01
+- **Truffle**
 
-Contribution: 2020-01-31 00:00
+      sudo npm install -g truffle@5.1.39 --unsafe-perm=true
 
-Contribution: 2020-01-31 00:01
+- **Ganache** installation guide can be found in [here](https://www.trufflesuite.com/ganache).
 
-Contribution: 2020-01-31 00:02
+- **MetaMask** installation guide can be found in [here](https://metamask.io/).
 
-Contribution: 2020-01-31 00:03
+### Commands
 
-Contribution: 2020-01-31 00:04
+- Install necessarily Node.js packages
 
-Contribution: 2020-01-31 00:05
+      npm install
 
-Contribution: 2020-01-31 00:06
+- Deploy smart contracts to the Ethereum blockchain
 
-Contribution: 2020-01-31 00:07
+      truffle migrate --reset
+      
+- Deploy and run the front-end application
 
-Contribution: 2020-01-31 00:08
+      npm start run
+      
+- Run the scripts to issue tokens
 
-Contribution: 2020-01-31 00:09
+      truffle exec scripts/issue-tokens.js
 
-Contribution: 2020-01-31 00:10
+Demo of the DApp with the screenshots can be found on [this wiki page](https://github.com/ahmetozlu/defi_yield_farming/wiki/Demo-of-the-DApp).
 
-Contribution: 2020-02-03 00:00
+## Citation
+If you use this code for your publications, please cite it as:
 
-Contribution: 2020-02-03 00:01
+    @ONLINE{
+        author = "Ahmet Özlü",
+        title  = "DeFi Yield Farming App",
+        year   = "2021",
+        url    = "https://github.com/ahmetozlu/defi_yield_farming"
+    }
 
-Contribution: 2020-02-03 00:02
+## References
+This project was built on top of **Dapp University** implementation, [here](https://github.com/dappuniversity/defi_tutorial) you can find more details.
 
-Contribution: 2020-02-03 00:03
+## Author
+Ahmet Özlü
 
-Contribution: 2020-02-03 00:04
-
-Contribution: 2020-02-03 00:05
-
-Contribution: 2020-02-03 00:06
-
-Contribution: 2020-02-03 00:07
-
-Contribution: 2020-02-04 00:00
-
-Contribution: 2020-02-04 00:01
-
-Contribution: 2020-02-04 00:02
-
-Contribution: 2020-02-04 00:03
-
-Contribution: 2020-02-04 00:04
-
-Contribution: 2020-02-04 00:05
-
-Contribution: 2020-02-04 00:06
-
-Contribution: 2020-02-04 00:07
-
-Contribution: 2020-02-04 00:08
-
-Contribution: 2020-02-04 00:09
-
-Contribution: 2020-02-04 00:10
-
-Contribution: 2020-02-04 00:11
-
-Contribution: 2020-02-04 00:12
-
-Contribution: 2020-02-04 00:13
-
-Contribution: 2020-02-04 00:14
-
-Contribution: 2020-02-05 00:00
-
-Contribution: 2020-02-05 00:01
-
-Contribution: 2020-02-06 00:00
-
-Contribution: 2020-02-06 00:01
-
-Contribution: 2020-02-06 00:02
-
-Contribution: 2020-02-06 00:03
-
-Contribution: 2020-02-06 00:04
-
-Contribution: 2020-02-06 00:05
-
-Contribution: 2020-02-06 00:06
-
-Contribution: 2020-02-06 00:07
-
-Contribution: 2020-02-06 00:08
-
-Contribution: 2020-02-06 00:09
-
-Contribution: 2020-02-06 00:10
-
-Contribution: 2020-02-06 00:11
-
-Contribution: 2020-02-06 00:12
-
-Contribution: 2020-02-06 00:13
+## License
+This system is available under the MIT license. See the LICENSE file for more info.
 
